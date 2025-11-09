@@ -1,0 +1,466 @@
+{
+  "version": 4,
+  "terraform_version": "1.13.5",
+  "serial": 43,
+  "lineage": "203edce1-6924-6b29-f850-d33fafcffee5",
+  "outputs": {
+    "private_key": {
+      "value": "-----BEGIN RSA PRIVATE KEY-----\n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\n-----END RSA PRIVATE KEY-----\n",
+      "type": "string",
+      "sensitive": true
+    },
+    "public_ip": {
+      "value": "4.213.141.221",
+      "type": "string"
+    }
+  },
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "azurerm_linux_virtual_machine",
+      "name": "vm",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "additional_capabilities": [],
+            "admin_password": null,
+            "admin_ssh_key": [
+              {
+                "public_key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCuTCNxYvHCqPZZ4hRVpRTAlFuPtwRCA6fHDIVibM+mRC02DhthTFGYm2pXsNDYR1yS4aHUsdWMed55XRhT20RWCckRvtiw5lTvuFyPl7ge/3o07/GamEAQ77khrpwTQE5FmPv5XrMYlpOx+T01M5pLEv1pzLa4BUqqOHUYQiTdLSe6YPZTES6xwJqTmZDDk6JKrLlgkORfb0YK9ons91wKK3QHOX2D+uSJli/VidBhmN23n1mv/5gqGX/sq9MQeKW6pVsku5lzDl5VReB1iPiy2C6vH3xZHN9RvtUx5bOMmWGGbSmcq71h7bhhjBIJVE34Gt8/QRE6u85zgB3QLR9+NEo5fotk1vEnu1nVvRLooZy+wTaWA+zUPFbYZI10+hpf8jDIDt//EW2DlkYJBLTqtpk6nJ13xgYTxyUkzJvCqT7NEbnbhVURRZz2g74st7y2ldPl1+AGGxouYc5/f+q6PbAPmU1M0NW1+dRgFglpaaTBHYPqIy024EQyBX9Dm8kY+I/AfNo0kXopd6qgvDz5IXcJvLh1MTvM+eIJJM1jbtqXkXXaqnPZq1lN3/rBNwJmYFdkAw6rolFEZbnn0vxThbzq29vxQxPfJtlspt+2AGNfJjBfwSfeaX9pTeKPT6O1hHGdmjrpcODeHw+ozU8dr/g1RZOw7ghIKDVoNY4pbw==\n",
+                "username": "suv"
+              }
+            ],
+            "admin_username": "suv",
+            "allow_extension_operations": true,
+            "availability_set_id": "",
+            "boot_diagnostics": [],
+            "bypass_platform_safety_checks_on_user_schedule_enabled": false,
+            "capacity_reservation_group_id": "",
+            "computer_name": "ubuntu-nginx-vm",
+            "custom_data": null,
+            "dedicated_host_group_id": "",
+            "dedicated_host_id": "",
+            "disable_password_authentication": true,
+            "disk_controller_type": "SCSI",
+            "edge_zone": "",
+            "encryption_at_host_enabled": false,
+            "eviction_policy": "",
+            "extensions_time_budget": "PT1H30M",
+            "gallery_application": [],
+            "id": "/subscriptions/eaa74b0d-43fc-4ab8-b612-d78995f82bf2/resourceGroups/rg-azure-devops-agent/providers/Microsoft.Compute/virtualMachines/ubuntu-nginx-vm",
+            "identity": [],
+            "license_type": "",
+            "location": "centralindia",
+            "max_bid_price": -1,
+            "name": "ubuntu-nginx-vm",
+            "network_interface_ids": [
+              "/subscriptions/eaa74b0d-43fc-4ab8-b612-d78995f82bf2/resourceGroups/rg-azure-devops-agent/providers/Microsoft.Network/networkInterfaces/nginx-nic"
+            ],
+            "os_disk": [
+              {
+                "caching": "ReadWrite",
+                "diff_disk_settings": [],
+                "disk_encryption_set_id": "",
+                "disk_size_gb": 30,
+                "id": "/subscriptions/eaa74b0d-43fc-4ab8-b612-d78995f82bf2/resourceGroups/rg-azure-devops-agent/providers/Microsoft.Compute/disks/ubuntu-nginx-vm_disk1_4507b04b5c95482c896e064507d1cc8c",
+                "name": "ubuntu-nginx-vm_disk1_4507b04b5c95482c896e064507d1cc8c",
+                "secure_vm_disk_encryption_set_id": "",
+                "security_encryption_type": "",
+                "storage_account_type": "Standard_LRS",
+                "write_accelerator_enabled": false
+              }
+            ],
+            "os_image_notification": [],
+            "os_managed_disk_id": "/subscriptions/eaa74b0d-43fc-4ab8-b612-d78995f82bf2/resourceGroups/rg-azure-devops-agent/providers/Microsoft.Compute/disks/ubuntu-nginx-vm_disk1_4507b04b5c95482c896e064507d1cc8c",
+            "patch_assessment_mode": "ImageDefault",
+            "patch_mode": "ImageDefault",
+            "plan": [],
+            "platform_fault_domain": -1,
+            "priority": "Regular",
+            "private_ip_address": "10.0.1.4",
+            "private_ip_addresses": [
+              "10.0.1.4"
+            ],
+            "provision_vm_agent": true,
+            "proximity_placement_group_id": "",
+            "public_ip_address": "4.213.141.221",
+            "public_ip_addresses": [
+              "4.213.141.221"
+            ],
+            "reboot_setting": "",
+            "resource_group_name": "rg-azure-devops-agent",
+            "secret": [],
+            "secure_boot_enabled": false,
+            "size": "Standard_B1s",
+            "source_image_id": "",
+            "source_image_reference": [
+              {
+                "offer": "0001-com-ubuntu-server-jammy",
+                "publisher": "Canonical",
+                "sku": "22_04-lts-gen2",
+                "version": "latest"
+              }
+            ],
+            "tags": null,
+            "termination_notification": null,
+            "timeouts": null,
+            "user_data": "",
+            "virtual_machine_id": "97cacee9-b370-482b-97cb-a4600d25d585",
+            "virtual_machine_scale_set_id": "",
+            "vm_agent_platform_updates_enabled": false,
+            "vtpm_enabled": false,
+            "zone": ""
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "admin_password"
+              }
+            ],
+            [
+              {
+                "type": "get_attr",
+                "value": "custom_data"
+              }
+            ]
+          ],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoyNzAwMDAwMDAwMDAwLCJkZWxldGUiOjI3MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoyNzAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_network_interface.nic",
+            "azurerm_public_ip.pub_ip",
+            "azurerm_resource_group.rg",
+            "azurerm_subnet.subnet",
+            "azurerm_virtual_network.vnet",
+            "tls_private_key.ssh_key"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_network_interface",
+      "name": "nic",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "accelerated_networking_enabled": false,
+            "applied_dns_servers": [],
+            "auxiliary_mode": "",
+            "auxiliary_sku": "",
+            "dns_servers": null,
+            "edge_zone": "",
+            "id": "/subscriptions/eaa74b0d-43fc-4ab8-b612-d78995f82bf2/resourceGroups/rg-azure-devops-agent/providers/Microsoft.Network/networkInterfaces/nginx-nic",
+            "internal_dns_name_label": "",
+            "internal_domain_name_suffix": "dphnmvgxlqpe1mxjgwcbppooob.rx.internal.cloudapp.net",
+            "ip_configuration": [
+              {
+                "gateway_load_balancer_frontend_ip_configuration_id": "",
+                "name": "internal",
+                "primary": true,
+                "private_ip_address": "10.0.1.4",
+                "private_ip_address_allocation": "Dynamic",
+                "private_ip_address_version": "IPv4",
+                "public_ip_address_id": "/subscriptions/eaa74b0d-43fc-4ab8-b612-d78995f82bf2/resourceGroups/rg-azure-devops-agent/providers/Microsoft.Network/publicIPAddresses/nginx-pubip",
+                "subnet_id": "/subscriptions/eaa74b0d-43fc-4ab8-b612-d78995f82bf2/resourceGroups/rg-azure-devops-agent/providers/Microsoft.Network/virtualNetworks/vnet-nginx/subnets/subnet1"
+              }
+            ],
+            "ip_forwarding_enabled": false,
+            "location": "centralindia",
+            "mac_address": "",
+            "name": "nginx-nic",
+            "private_ip_address": "10.0.1.4",
+            "private_ip_addresses": [
+              "10.0.1.4"
+            ],
+            "resource_group_name": "rg-azure-devops-agent",
+            "tags": null,
+            "timeouts": null,
+            "virtual_machine_id": ""
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "identity": {
+            "name": "nginx-nic",
+            "resource_group_name": "rg-azure-devops-agent",
+            "subscription_id": "eaa74b0d-43fc-4ab8-b612-d78995f82bf2"
+          },
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_public_ip.pub_ip",
+            "azurerm_resource_group.rg",
+            "azurerm_subnet.subnet",
+            "azurerm_virtual_network.vnet"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_network_security_group",
+      "name": "nsg",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "/subscriptions/eaa74b0d-43fc-4ab8-b612-d78995f82bf2/resourceGroups/rg-azure-devops-agent/providers/Microsoft.Network/networkSecurityGroups/nginx-nsg",
+            "location": "centralindia",
+            "name": "nginx-nsg",
+            "resource_group_name": "rg-azure-devops-agent",
+            "security_rule": [
+              {
+                "access": "Allow",
+                "description": "",
+                "destination_address_prefix": "*",
+                "destination_address_prefixes": [],
+                "destination_application_security_group_ids": [],
+                "destination_port_range": "22",
+                "destination_port_ranges": [],
+                "direction": "Inbound",
+                "name": "SSH",
+                "priority": 1001,
+                "protocol": "Tcp",
+                "source_address_prefix": "*",
+                "source_address_prefixes": [],
+                "source_application_security_group_ids": [],
+                "source_port_range": "*",
+                "source_port_ranges": []
+              },
+              {
+                "access": "Allow",
+                "description": "",
+                "destination_address_prefix": "*",
+                "destination_address_prefixes": [],
+                "destination_application_security_group_ids": [],
+                "destination_port_range": "80",
+                "destination_port_ranges": [],
+                "direction": "Inbound",
+                "name": "HTTP",
+                "priority": 1002,
+                "protocol": "Tcp",
+                "source_address_prefix": "*",
+                "source_address_prefixes": [],
+                "source_application_security_group_ids": [],
+                "source_port_range": "*",
+                "source_port_ranges": []
+              }
+            ],
+            "tags": null,
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "identity": {
+            "name": "nginx-nsg",
+            "resource_group_name": "rg-azure-devops-agent",
+            "subscription_id": "eaa74b0d-43fc-4ab8-b612-d78995f82bf2"
+          },
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_resource_group.rg"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_public_ip",
+      "name": "pub_ip",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "allocation_method": "Static",
+            "ddos_protection_mode": "VirtualNetworkInherited",
+            "ddos_protection_plan_id": null,
+            "domain_name_label": null,
+            "domain_name_label_scope": null,
+            "edge_zone": "",
+            "fqdn": null,
+            "id": "/subscriptions/eaa74b0d-43fc-4ab8-b612-d78995f82bf2/resourceGroups/rg-azure-devops-agent/providers/Microsoft.Network/publicIPAddresses/nginx-pubip",
+            "idle_timeout_in_minutes": 4,
+            "ip_address": "4.213.141.221",
+            "ip_tags": null,
+            "ip_version": "IPv4",
+            "location": "centralindia",
+            "name": "nginx-pubip",
+            "public_ip_prefix_id": null,
+            "resource_group_name": "rg-azure-devops-agent",
+            "reverse_fqdn": null,
+            "sku": "Standard",
+            "sku_tier": "Regional",
+            "tags": null,
+            "timeouts": null,
+            "zones": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_resource_group.rg"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_resource_group",
+      "name": "rg",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "/subscriptions/eaa74b0d-43fc-4ab8-b612-d78995f82bf2/resourceGroups/rg-azure-devops-agent",
+            "location": "centralindia",
+            "managed_by": "",
+            "name": "rg-azure-devops-agent",
+            "tags": null,
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo1NDAwMDAwMDAwMDAwLCJkZWxldGUiOjU0MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjo1NDAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_subnet",
+      "name": "subnet",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "address_prefixes": [
+              "10.0.1.0/24"
+            ],
+            "default_outbound_access_enabled": true,
+            "delegation": [],
+            "id": "/subscriptions/eaa74b0d-43fc-4ab8-b612-d78995f82bf2/resourceGroups/rg-azure-devops-agent/providers/Microsoft.Network/virtualNetworks/vnet-nginx/subnets/subnet1",
+            "ip_address_pool": [],
+            "name": "subnet1",
+            "private_endpoint_network_policies": "Disabled",
+            "private_link_service_network_policies_enabled": true,
+            "resource_group_name": "rg-azure-devops-agent",
+            "service_endpoint_policy_ids": null,
+            "service_endpoints": null,
+            "sharing_scope": "",
+            "timeouts": null,
+            "virtual_network_name": "vnet-nginx"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "identity": {
+            "name": "subnet1",
+            "resource_group_name": "rg-azure-devops-agent",
+            "subscription_id": "eaa74b0d-43fc-4ab8-b612-d78995f82bf2",
+            "virtual_network_name": "vnet-nginx"
+          },
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_resource_group.rg",
+            "azurerm_virtual_network.vnet"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_virtual_network",
+      "name": "vnet",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "address_space": [
+              "10.0.0.0/16"
+            ],
+            "bgp_community": "",
+            "ddos_protection_plan": [],
+            "dns_servers": [],
+            "edge_zone": "",
+            "encryption": [],
+            "flow_timeout_in_minutes": 0,
+            "guid": "54d6ce1b-5cd7-4d1e-b2e9-358417bdce71",
+            "id": "/subscriptions/eaa74b0d-43fc-4ab8-b612-d78995f82bf2/resourceGroups/rg-azure-devops-agent/providers/Microsoft.Network/virtualNetworks/vnet-nginx",
+            "ip_address_pool": [],
+            "location": "centralindia",
+            "name": "vnet-nginx",
+            "private_endpoint_vnet_policies": "Disabled",
+            "resource_group_name": "rg-azure-devops-agent",
+            "subnet": [],
+            "tags": null,
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "identity": {
+            "name": "vnet-nginx",
+            "resource_group_name": "rg-azure-devops-agent",
+            "subscription_id": "eaa74b0d-43fc-4ab8-b612-d78995f82bf2"
+          },
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_resource_group.rg"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "tls_private_key",
+      "name": "ssh_key",
+      "provider": "provider[\"registry.terraform.io/hashicorp/tls\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "algorithm": "RSA",
+            "ecdsa_curve": "P224",
+            "id": "beaa3017d2fce4c5aa912bcfc41b208976224847",
+            "private_key_openssh": "-----BEGIN OPENSSH PRIVATE KEY-----\n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\n-----END OPENSSH PRIVATE KEY-----\n",
+            "private_key_pem": "-----BEGIN RSA PRIVATE KEY-----\n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\n-----END RSA PRIVATE KEY-----\n",
+            "private_key_pem_pkcs8": "-----BEGIN PRIVATE KEY-----\n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\nApAF18/L6Dbc1qoEFGG4F57+ZBY2RO7PH1gr+BCBAoIBAHtqXufmcKqS0cQBeije\nQe9+NL91dsGZOUj52+jTVuTPtfC/rmYlEfX4WkmrJZDp17TF5CW38+Hg8iss0Yf3\n+5GlTCRnNjCi3GP24ZQW5dnMUkvkIjmSMR+cp/uHbD+uBoCkTTDszslJj9D2zmzh\nuGyJtJL/R+L+PatvmI4kSZJvJ9pW36aFIqwEpYZSSYrtKZS2Zercx8k0K1M2JRz2\npNoq4EID+TzlaRENhS8LSBPI23wpSFKeRI3fJdA4F01yHIFrA4q7tWr6BptFqPk2\n4AfAv4jTRrtb4IwAm4rVgmLXi2jlsvIsg5VrifWvD6KiRUD9HEMCtOXA+854Trw3\n2DUCggEBAJbHmDg7KiwovfMIc+qftq7/Lw41gqObK7ZLh/HmSIR6dIUjUE/R5fBO\nOQoA+c9Jjni2tJQdOoIqOwKqhqdlUjbLG8tLVUHSXI6Q3H7d+3ZA4ZDbb8Qo1QkM\nxCUrByKCFxk01Eq3sKlJg5ojfFNXxor0s4Ut+Gn4OYLvFJmIU/dde5paJCYinRWC\nmfdIi1soTwdS/O5f80dzVtrqd6sT/m4EQfz6XHC3dquRpWX5exH7zKfum4Vrdyjy\nKDAQhbTwVrNVGiOFvyveeFpPx3z4mtQ/GHOkDiV88FD174kSFw/MSyt70cnYjdJU\npNhID7TenI4hFWsCY8fCL0z0upTzyWg=\n-----END PRIVATE KEY-----\n",
+            "public_key_fingerprint_md5": "2b:89:75:f3:21:54:fc:ae:7e:b5:40:e7:f6:39:0b:47",
+            "public_key_fingerprint_sha256": "SHA256:IQVtnJ0wyQEgPUX2gRrFwBxuLJ0ngEZtwPghB5c1niQ",
+            "public_key_openssh": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCuTCNxYvHCqPZZ4hRVpRTAlFuPtwRCA6fHDIVibM+mRC02DhthTFGYm2pXsNDYR1yS4aHUsdWMed55XRhT20RWCckRvtiw5lTvuFyPl7ge/3o07/GamEAQ77khrpwTQE5FmPv5XrMYlpOx+T01M5pLEv1pzLa4BUqqOHUYQiTdLSe6YPZTES6xwJqTmZDDk6JKrLlgkORfb0YK9ons91wKK3QHOX2D+uSJli/VidBhmN23n1mv/5gqGX/sq9MQeKW6pVsku5lzDl5VReB1iPiy2C6vH3xZHN9RvtUx5bOMmWGGbSmcq71h7bhhjBIJVE34Gt8/QRE6u85zgB3QLR9+NEo5fotk1vEnu1nVvRLooZy+wTaWA+zUPFbYZI10+hpf8jDIDt//EW2DlkYJBLTqtpk6nJ13xgYTxyUkzJvCqT7NEbnbhVURRZz2g74st7y2ldPl1+AGGxouYc5/f+q6PbAPmU1M0NW1+dRgFglpaaTBHYPqIy024EQyBX9Dm8kY+I/AfNo0kXopd6qgvDz5IXcJvLh1MTvM+eIJJM1jbtqXkXXaqnPZq1lN3/rBNwJmYFdkAw6rolFEZbnn0vxThbzq29vxQxPfJtlspt+2AGNfJjBfwSfeaX9pTeKPT6O1hHGdmjrpcODeHw+ozU8dr/g1RZOw7ghIKDVoNY4pbw==\n",
+            "public_key_pem": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEArkwjcWLxwqj2WeIUVaUU\nwJRbj7cEQgOnxwyFYmzPpkQtNg4bYUxRmJtqV7DQ2EdckuGh1LHVjHneeV0YU9tE\nVgnJEb7YsOZU77hcj5e4Hv96NO/xmphAEO+5Ia6cE0BORZj7+V6zGJaTsfk9NTOa\nSxL9acy2uAVKqjh1GEIk3S0numD2UxEuscCak5mQw5OiSqy5YJDkX29GCvaJ7Pdc\nCit0Bzl9g/rkiZYv1YnQYZjdt59Zr/+YKhl/7KvTEHiluqVbJLuZcw5eVUXgdYj4\nstgurx98WRzfUb7VMeWzjJlhhm0pnKu9Ye24YYwSCVRN+BrfP0EROrvOc4Ad0C0f\nfjRKOX6LZNbxJ7tZ1b0S6KGcvsE2lgPs1DxW2GSNdPoaX/IwyA7f/xFtg5ZGCQS0\n6raZOpydd8YGE8clJMybwqk+zRG524VVEUWc9oO+LLe8tpXT5dfgBhsaLmHOf3/q\nuj2wD5lNTNDVtfnUYBYJaWmkwR2D6iMtNuBEMgV/Q5vJGPiPwHzaNJF6KXeqoLw8\n+SF3Cby4dTE7zPniCSTNY27al5F12qpz2atZTd/6wTcCZmBXZAMOq6JRRGW559L8\nU4W86tvb8UMT3ybZbKbftgBjXyYwX8En3ml/aU3ij0+jtYRxnZo66XDg3h8PqM1P\nHa/4NUWTsO4ISCg1aDWOKW8CAwEAAQ==\n-----END PUBLIC KEY-----\n",
+            "rsa_bits": 4096
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "private_key_openssh"
+              }
+            ],
+            [
+              {
+                "type": "get_attr",
+                "value": "private_key_pem"
+              }
+            ],
+            [
+              {
+                "type": "get_attr",
+                "value": "private_key_pem_pkcs8"
+              }
+            ]
+          ],
+          "identity_schema_version": 0
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
