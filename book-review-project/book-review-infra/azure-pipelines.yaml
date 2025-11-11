@@ -1,0 +1,184 @@
+trigger:
+  branches:
+    include:
+      - main
+  paths:
+    include:
+      - terraform/*
+      - azure-pipelines.yml
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  - group: AWS-Credentials
+  - name: AWS_REGION
+    value: 'ap-south-1'
+  - name: TERRAFORM_VERSION
+    value: '1.5.0'
+  - name: TF_WORKING_DIR
+    value: '$(System.DefaultWorkingDirectory)/terraform'
+
+stages:
+  - stage: Validate
+    displayName: 'Validate Terraform'
+    jobs:
+      - job: TerraformValidate
+        displayName: 'Validate Terraform Configuration'
+        steps:
+          - checkout: self
+            fetchDepth: 0
+
+          - task: TerraformInstaller@1
+            displayName: 'Install Terraform $(TERRAFORM_VERSION)'
+            inputs:
+              terraformVersion: $(TERRAFORM_VERSION)
+
+          - task: TerraformTaskV4@4
+            displayName: 'Terraform Format Check'
+            inputs:
+              provider: 'aws'
+              command: 'custom'
+              customCommand: 'fmt'
+              commandOptions: '-check -recursive'
+              workingDirectory: '$(TF_WORKING_DIR)'
+
+          - task: TerraformTaskV4@4
+            displayName: 'Terraform Validate'
+            inputs:
+              provider: 'aws'
+              command: 'validate'
+              workingDirectory: '$(TF_WORKING_DIR)'
+            env:
+              AWS_ACCESS_KEY_ID: $(AWS_ACCESS_KEY_ID)
+              AWS_SECRET_ACCESS_KEY: $(AWS_SECRET_ACCESS_KEY)
+
+  - stage: Plan
+    displayName: 'Plan Infrastructure Changes'
+    dependsOn: Validate
+    condition: succeeded()
+    jobs:
+      - job: TerraformPlan
+        displayName: 'Terraform Plan'
+        steps:
+          - checkout: self
+
+          - task: TerraformInstaller@1
+            displayName: 'Install Terraform'
+            inputs:
+              terraformVersion: $(TERRAFORM_VERSION)
+
+          - task: TerraformTaskV4@4
+            displayName: 'Terraform Init'
+            inputs:
+              provider: 'aws'
+              command: 'init'
+              workingDirectory: '$(TF_WORKING_DIR)'
+            env:
+              AWS_ACCESS_KEY_ID: $(AWS_ACCESS_KEY_ID)
+              AWS_SECRET_ACCESS_KEY: $(AWS_SECRET_ACCESS_KEY)
+
+          - task: TerraformTaskV4@4
+            displayName: 'Terraform Plan'
+            inputs:
+              provider: 'aws'
+              command: 'plan'
+              commandOptions: '-out=tfplan -input=false'
+              workingDirectory: '$(TF_WORKING_DIR)'
+            env:
+              AWS_ACCESS_KEY_ID: $(AWS_ACCESS_KEY_ID)
+              AWS_SECRET_ACCESS_KEY: $(AWS_SECRET_ACCESS_KEY)
+
+          - task: PublishBuildArtifacts@1
+            displayName: 'Publish Terraform Plan'
+            inputs:
+              PathtoPublish: '$(TF_WORKING_DIR)'
+              ArtifactName: 'terraform-plan'
+              publishLocation: 'Container'
+
+  - stage: Apply
+    displayName: 'Apply Infrastructure Changes'
+    dependsOn: Plan
+    condition: succeeded()
+    jobs:
+      - job: TerraformApply
+        displayName: 'Terraform Apply'
+        steps:
+          - checkout: self
+
+          - task: TerraformInstaller@1
+            displayName: 'Install Terraform'
+            inputs:
+              terraformVersion: $(TERRAFORM_VERSION)
+
+          - task: DownloadBuildArtifacts@0
+            displayName: 'Download Terraform Plan'
+            inputs:
+              artifactName: 'terraform-plan'
+              downloadPath: '$(System.DefaultWorkingDirectory)'
+
+          - task: TerraformTaskV4@4
+            displayName: 'Terraform Apply'
+            inputs:
+              provider: 'aws'
+              command: 'apply'
+              commandOptions: '-auto-approve -input=false terraform/tfplan'
+              workingDirectory: '$(System.DefaultWorkingDirectory)'
+            env:
+              AWS_ACCESS_KEY_ID: $(AWS_ACCESS_KEY_ID)
+              AWS_SECRET_ACCESS_KEY: $(AWS_SECRET_ACCESS_KEY)
+
+          - script: |
+              cd $(TF_WORKING_DIR)
+              echo "##[section]Infrastructure Deployment Complete"
+              echo "##[group]Terraform Outputs"
+              terraform output
+              echo "##[endgroup]"
+              
+              FRONTEND_IP=$(terraform output -raw frontend_public_ip)
+              BACKEND_IP=$(terraform output -raw backend_private_ip)
+              RDS_ENDPOINT=$(terraform output -raw rds_address)
+              
+              echo "##vso[task.setvariable variable=FRONTEND_IP;isOutput=true]$FRONTEND_IP"
+              echo "##vso[task.setvariable variable=BACKEND_IP;isOutput=true]$BACKEND_IP"
+              echo "##vso[task.setvariable variable=RDS_ENDPOINT;isOutput=true]$RDS_ENDPOINT"
+              
+              echo "Frontend IP: $FRONTEND_IP"
+              echo "Backend IP: $BACKEND_IP"
+              echo "RDS Endpoint: $RDS_ENDPOINT"
+            displayName: 'Extract Terraform Outputs'
+            env:
+              AWS_ACCESS_KEY_ID: $(AWS_ACCESS_KEY_ID)
+              AWS_SECRET_ACCESS_KEY: $(AWS_SECRET_ACCESS_KEY)
+            workingDirectory: '$(TF_WORKING_DIR)'
+            name: 'SetOutput'
+
+  - stage: Verify
+    displayName: 'Verify Infrastructure'
+    dependsOn: Apply
+    condition: succeeded()
+    jobs:
+      - job: VerifyResources
+        displayName: 'Verify AWS Resources'
+        steps:
+          - script: |
+              echo "##[section]Infrastructure Verification"
+              
+              aws sts get-caller-identity --region $(AWS_REGION)
+              
+              echo "##[command]Verifying EC2 instances..."
+              aws ec2 describe-instances \
+                --region $(AWS_REGION) \
+                --filters "Name=tag:Project,Values=BookReview" \
+                --query 'Reservations[].Instances[].{Name:Tags[?Key==`Name`]|[0].Value,State:State.Name,IP:PublicIpAddress}' \
+                --output table
+              
+              echo "##[command]Verifying RDS instance..."
+              aws rds describe-db-instances \
+                --region $(AWS_REGION) \
+                --query 'DBInstances[?DBInstanceIdentifier==`book-review-mysql`].{ID:DBInstanceIdentifier,Status:DBInstanceStatus,Endpoint:Endpoint.Address}' \
+                --output table
+            displayName: 'Verify Infrastructure Resources'
+            env:
+              AWS_ACCESS_KEY_ID: $(AWS_ACCESS_KEY_ID)
+              AWS_SECRET_ACCESS_KEY: $(AWS_SECRET_ACCESS_KEY)
