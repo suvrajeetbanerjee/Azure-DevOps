@@ -7,3 +7,5 @@ key.pem
 suvrajeet.key.pem
 
 myagent/
+*.x
+*.tfstate
