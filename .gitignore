@@ -1,4 +1,6 @@
 terraform/.terraform/
+rf/dev-epicbook-infra/.terraform/providers/registry.terraform.io/hashicorp/azurerm/3.117.1/linux_amd64/terraform-provider-azurerm_v3.117.1_x5
+rf/dev-epicbook-infra/.terraform/providers/registry.terraform.io/hashicorp/random/3.7.2/linux_amd64/terraform-provider-random_v3.7.2_x5
 # *.tfstate
 # *.tfstate.backup
 
